@@ -12,7 +12,7 @@ NTU SC1015 SC16 Team 2 Project
 
 ### Possible Dataset to use
 | Number | Head | URL | Rating | 
-| ------ | ------ | ------ |
-|1       | Wine Quality DataSet | https://www.kaggle.com/yasserh/wine-quality-dataset | 10.0|
-|2       |Top 1000 Highest Grossing Movies | https://www.kaggle.com/sanjeetsinghnaik/top-1000-highest-grossing-movies | 10.0|
-|3       |2021-2022 NBA Player Stats | https://www.kaggle.com/vivovinco/nba-player-stats | 10.0|
+| ------ | ------ | ------ | ------ |
+|1 | Wine Quality DataSet | https://www.kaggle.com/yasserh/wine-quality-dataset | 10.0|
+|2 |Top 1000 Highest Grossing Movies | https://www.kaggle.com/sanjeetsinghnaik/top-1000-highest-grossing-movies | 10.0|
+|3 |2021-2022 NBA Player Stats | https://www.kaggle.com/vivovinco/nba-player-stats | 10.0|
