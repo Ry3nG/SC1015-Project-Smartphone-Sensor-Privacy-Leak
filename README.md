@@ -19,6 +19,6 @@ NTU SC1015 SC16 Team 2 Project
 |4|Data scientist salary|https://www.kaggle.com/nikhilbhathi/data-scientist-salary-us-glassdoor| 10.0 | 42|
 
 
-### information from lab TA
+### Information from lab TA
 * Project due should be around week 14
 * Final product is a Jupyter Noteboook containing all source file, and a video presentation.
