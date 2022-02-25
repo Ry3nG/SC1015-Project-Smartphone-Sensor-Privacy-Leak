@@ -9,3 +9,6 @@ NTU SC1015 SC16 Team 2 Project
 * 20% for the presentation of data-driven insights and the recommendations
 * 10% for the quality of your final team presentation and overall impressions
 * 10% for learning something new and doing something beyond this course
+
+### Possible Dataset to use
+1. Wine Quality DataSet (https://www.kaggle.com/yasserh/wine-quality-dataset)
