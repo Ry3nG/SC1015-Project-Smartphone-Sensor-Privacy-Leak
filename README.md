@@ -16,3 +16,4 @@ NTU SC1015 SC16 Team 2 Project
 |1 | Wine Quality DataSet | https://www.kaggle.com/yasserh/wine-quality-dataset | 10.0 | 13|
 |2 |Top 1000 Highest Grossing Movies | https://www.kaggle.com/sanjeetsinghnaik/top-1000-highest-grossing-movies | 10.0 | 11 |
 |3 |2021-2022 NBA Player Stats | https://www.kaggle.com/vivovinco/nba-player-stats | 10.0| 30 |
+|4|Data scientist salary|https://www.kaggle.com/nikhilbhathi/data-scientist-salary-us-glassdoor| 10.0 | 42|
