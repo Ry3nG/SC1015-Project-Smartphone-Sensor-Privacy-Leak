@@ -7,6 +7,7 @@ NTU SC1015 SC16 Team 2 Project
 
 ### Data Scientist Salary
 Dataset: https://www.kaggle.com/nikhilbhathi/data-scientist-salary-us-glassdoor
+
 Brainstorm:
 * Build a model to provide information of data science related jobs?
 * Provide information of how skills/ age / places / ... result in different jobs/salaries
