@@ -18,7 +18,7 @@ NTU SC1015 SC16 Team 2 Project
 |3 |2021-2022 NBA Player Stats | https://www.kaggle.com/vivovinco/nba-player-stats | 10.0| Classification |
 |4|Data scientist salary|https://www.kaggle.com/nikhilbhathi/data-scientist-salary-us-glassdoor| 10.0 | Numeric Prediction|
 |5|Fake and real news dataset|https://www.kaggle.com/clmentbisaillon/fake-and-real-news-dataset|8.8|NLP, Classification|
-|6|Sentiment140 dataset with 1.6 million tweets|https://www.kaggle.com/kazanova/sentiment140 | 8.8| NLP? |
+|6|Sentiment140 dataset with 1.6 million tweets|https://www.kaggle.com/kazanova/sentiment140 | 8.8| NLP? reference: https://www.kaggle.com/stoicstatic/twitter-sentiment-analysis-for-beginners|
 
 ### Information from lab TA
 * Project due should be around week  
