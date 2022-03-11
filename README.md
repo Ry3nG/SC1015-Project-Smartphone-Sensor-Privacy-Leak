@@ -11,13 +11,13 @@ NTU SC1015 SC16 Team 2 Project
 * 10% for learning something new and doing something beyond this course
 
 ### Possible Dataset to use
-| Number | Head | URL | Rating | No. of columns to work with|
+| Number | Head | URL | Rating | Related Topics of study|
 | ------ | ------ | ------ | ------ | ------ |
-|1 | Wine Quality DataSet | https://www.kaggle.com/yasserh/wine-quality-dataset | 10.0 | 13|
-|2 |Top 1000 Highest Grossing Movies | https://www.kaggle.com/sanjeetsinghnaik/top-1000-highest-grossing-movies | 10.0 | 11 |
-|3 |2021-2022 NBA Player Stats | https://www.kaggle.com/vivovinco/nba-player-stats | 10.0| 30 |
-|4|Data scientist salary|https://www.kaggle.com/nikhilbhathi/data-scientist-salary-us-glassdoor| 10.0 | 42|
-|5|Fake and real news dataset|https://www.kaggle.com/clmentbisaillon/fake-and-real-news-dataset|8.8|N/A|
+|1 | Wine Quality DataSet | https://www.kaggle.com/yasserh/wine-quality-dataset | 10.0 | Classfication|
+|2 |Top 1000 Highest Grossing Movies | https://www.kaggle.com/sanjeetsinghnaik/top-1000-highest-grossing-movies | 10.0 |  |
+|3 |2021-2022 NBA Player Stats | https://www.kaggle.com/vivovinco/nba-player-stats | 10.0| Classification |
+|4|Data scientist salary|https://www.kaggle.com/nikhilbhathi/data-scientist-salary-us-glassdoor| 10.0 | Numeric Prediction|
+|5|Fake and real news dataset|https://www.kaggle.com/clmentbisaillon/fake-and-real-news-dataset|8.8|NLP, Classification|
 
 ### Information from lab TA
 * Project due should be around week 14
