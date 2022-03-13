@@ -56,6 +56,11 @@ Brainstorm:
 |5|Fake and real news dataset|https://www.kaggle.com/clmentbisaillon/fake-and-real-news-dataset|8.8|NLP, Classification|
 |6|Sentiment140 dataset with 1.6 million tweets|https://www.kaggle.com/kazanova/sentiment140 | 8.8| NLP? reference: https://www.kaggle.com/stoicstatic/twitter-sentiment-analysis-for-beginners|
 
+problem exploration:
+1. predict outcome
+2. importance features to predict the outcome
+3. 在这些预测的基础上 附加一些问题/价值...
+
 ### Information from lab TA
 * Project due should be around week  
 * Final product is a Jupyter Noteboook containing all source file, and a video presentation.
