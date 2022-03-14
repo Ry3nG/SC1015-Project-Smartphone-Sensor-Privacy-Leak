@@ -25,11 +25,6 @@ https://www.kaggle.com/uciml/human-activity-recognition-with-smartphones
 <br>
 <br>
 <br>
-<br>
-<br>
-<br>
-<br>
-
 ----------------------------------
 
 ## Related Information
