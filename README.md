@@ -29,6 +29,42 @@ https://www.kaggle.com/uciml/human-activity-recognition-with-smartphones
 
 ## Related Information
 
+
+
+## [URGENT] Decide on the topic
+
+### Data Scientist Salary
+Dataset: https://www.kaggle.com/nikhilbhathi/data-scientist-salary-us-glassdoor
+
+Brainstorm:
+* Build a model to provide information of data science related jobs?
+* Provide information of how skills/ age / places / ... result in different jobs/salaries
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br/>
+<br/>
+<br/>
+
+--------
+
 ### Grading
 * 10% for coming up with your own problem definition based on a dataset
 * 10% for data preparation and cleaning to suit the problem of your choice
@@ -39,5 +75,5 @@ https://www.kaggle.com/uciml/human-activity-recognition-with-smartphones
 * 10% for learning something new and doing something beyond this course
 
 ### Information from lab TA
-* Project due should be around week 14
+* Project due should be around week  
 * Final product is a Jupyter Noteboook containing all source file, and a video presentation.
