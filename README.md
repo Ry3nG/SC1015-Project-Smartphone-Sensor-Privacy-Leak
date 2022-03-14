@@ -1,5 +1,38 @@
 # SC1015-Project
 NTU SC1015 SC16 Team 2 Project
+### Dataset
+Human Activity Recognition with Smartphones:
+https://www.kaggle.com/uciml/human-activity-recognition-with-smartphones
+
+### Research Question
+(To be decided)
+* Possible direction:
+  * How easily your smartphone can leak your information?
+  * Analyzing the activity pattern for different users is to recommended fitness advisory or health condition alert in a customizable way
+
+### Objectives
+1. Determine what the user is doing with the phone.
+2. Determine who is using the phone based on movement style.
+
+
+### Research Process
+1. Come up with the research question
+2. Data cleaning and preparation
+3. EDA to gather insights
+4. Use ML techniques (Clustering, ...etc)
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+----------------------------------
+
+## Related Information
 
 
 
@@ -45,21 +78,6 @@ Brainstorm:
 * 20% for the presentation of data-driven insights and the recommendations
 * 10% for the quality of your final team presentation and overall impressions
 * 10% for learning something new and doing something beyond this course
-
-### Possible Dataset to use
-| Number | Head | URL | Rating | Related Topics of study|
-| ------ | ------ | ------ | ------ | ------ |
-|1 | Wine Quality DataSet | https://www.kaggle.com/yasserh/wine-quality-dataset | 10.0 | Classfication|
-|2 |Top 1000 Highest Grossing Movies | https://www.kaggle.com/sanjeetsinghnaik/top-1000-highest-grossing-movies | 10.0 |  |
-|3 |2021-2022 NBA Player Stats | https://www.kaggle.com/vivovinco/nba-player-stats | 10.0| Classification |
-|4|Data scientist salary|https://www.kaggle.com/nikhilbhathi/data-scientist-salary-us-glassdoor| 10.0 | Numeric Prediction|
-|5|Fake and real news dataset|https://www.kaggle.com/clmentbisaillon/fake-and-real-news-dataset|8.8|NLP, Classification|
-|6|Sentiment140 dataset with 1.6 million tweets|https://www.kaggle.com/kazanova/sentiment140 | 8.8| NLP? reference: https://www.kaggle.com/stoicstatic/twitter-sentiment-analysis-for-beginners|
-
-### problem exploration:
-1. predict outcome
-2. importance features to predict the outcome
-3. 在这些预测的基础上 附加一些问题/价值...
 
 ### Information from lab TA
 * Project due should be around week  
