@@ -22,6 +22,11 @@ https://www.kaggle.com/uciml/human-activity-recognition-with-smartphones
 4. Use ML techniques (Clustering, ...etc)
 
 
+### ideas
+1. is there a major sensor data contributing to the findings
+2. what are the consequences of such a information leak
+
+
 <br>
 <br>
 <br>
