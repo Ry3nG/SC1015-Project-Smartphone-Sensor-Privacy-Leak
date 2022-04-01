@@ -26,6 +26,9 @@ https://www.kaggle.com/uciml/human-activity-recognition-with-smartphones
 1. is there a major sensor data contributing to the findings
 2. what are the consequences of such a information leak
 
+### Storyline
+1. 先探讨整个data leak有多serious， 从hacker角度，从公司角度
+2. 提出某个方法来prevent data leak，来让用户数据更安全
 
 <br>
 <br>
