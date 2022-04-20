@@ -16,10 +16,11 @@ https://www.kaggle.com/uciml/human-activity-recognition-with-smartphones
 
 
 ### Research Process
-1. Come up with the research question
-2. Data cleaning and preparation
-3. EDA to gather insights
-4. Use ML techniques (Clustering, ...etc)
+1. EDA (done)
+2. Model fitting on activities
+3. Model fitting on Subjects
+4. Find out the parameter that contribute the most to the accuracy of the ML models
+6. Walking pattern exploration (less important, just some extend research) ** remember to visulize, to show the possiblity 
 
 
 ### ideas
