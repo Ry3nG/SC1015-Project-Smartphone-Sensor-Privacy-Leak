@@ -1,5 +1,5 @@
 # SC1015 Data Science & Artificial Intelligence Mini Project
-# How much user information can smartphone sensors reveal, How to prevent it by protecting data
+# How much user information can smartphone sensors reveal? Can we prevent it by protecting partial data?
 SC16 --- Chen Yi, Gong Zerui, Zeng Xunyi
 dataset: https://www.kaggle.com/datasets/uciml/human-activity-recognition-with-smartphones
 
