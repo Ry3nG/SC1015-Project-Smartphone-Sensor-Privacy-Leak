@@ -144,3 +144,4 @@ To ultimately prevent the privacy leak related to human activity data, based on 
 ## 5. References
 1. https://www.kaggle.com/code/ashishpatel26/feature-importance-of-lightgbm/notebook#Feature-importance
 2. https://www.kaggle.com/code/jdarcy/introducing-ssa-for-time-series-decomposition/notebook
+3. https://stackoverflow.com/questions/16716302/how-do-i-fit-a-sine-curve-to-my-data-with-pylab-and-numpy
