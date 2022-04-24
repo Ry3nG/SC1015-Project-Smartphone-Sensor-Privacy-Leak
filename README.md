@@ -15,10 +15,9 @@ subproblem 2: How to prevent personal information leak by preventing partial dat
 ### 1.2 Data Cleaning
 1. There are 0 NaN or Null value in the dataset
 2. The data is quite balanced in both activities and participants
-
-   <img src = "https://github.com/XunyiiZ/SC1015-Project/blob/e5ceef024ba0ff15910e8f8e30c4723628a580ea/images/activity%20balance.png" width=400>
-
-   ![](https://github.com/XunyiiZ/SC1015-Project/blob/6224ba8f602d3e3a9e8cb3cf64d17ae136a1bbf4/images/participant%20balance.png)
+   
+<img src = "https://github.com/XunyiiZ/SC1015-Project/blob/e5ceef024ba0ff15910e8f8e30c4723628a580ea/images/activity%20balance.png" width=400  class="center">
+<img src = "https://github.com/XunyiiZ/SC1015-Project/blob/4b6f85870471f86b1de37a7ec99495d66d2799d5/images/participant%20balance.png" width=400 class="center">
 
 ### 1.3 explore the dataset
 a. description
@@ -29,28 +28,28 @@ a. description
 
  b. activities in dataset
 
-   <img src = "https://github.com/XunyiiZ/SC1015-Project/blob/e5ceef024ba0ff15910e8f8e30c4723628a580ea/images/activities%20number.PNG" width=400>
-   <img src = "https://github.com/XunyiiZ/SC1015-Project/blob/e5ceef024ba0ff15910e8f8e30c4723628a580ea/images/activity.png" width=400>
+<img src = "https://github.com/XunyiiZ/SC1015-Project/blob/e5ceef024ba0ff15910e8f8e30c4723628a580ea/images/activities%20number.PNG" width=400 class="center">
+<img src = "https://github.com/XunyiiZ/SC1015-Project/blob/e5ceef024ba0ff15910e8f8e30c4723628a580ea/images/activity.png" width=400 class = "center">
 
 #### c. participants in dataset
 Number of Participants: 30
-   <img src = "https://github.com/XunyiiZ/SC1015-Project/blob/e5ceef024ba0ff15910e8f8e30c4723628a580ea/images/participants.png" width=400>
+   <img src = "https://github.com/XunyiiZ/SC1015-Project/blob/e5ceef024ba0ff15910e8f8e30c4723628a580ea/images/participants.png" width=400 class = "center">
 
 ### 1.4 TSNE(t-distributed stochastic neighbor) for visualization data visualization
 
-   <img src = "https://github.com/XunyiiZ/SC1015-Project/blob/e5ceef024ba0ff15910e8f8e30c4723628a580ea/images/tsne-a.PNG" width=400>
+   <img src = "https://github.com/XunyiiZ/SC1015-Project/blob/e5ceef024ba0ff15910e8f8e30c4723628a580ea/images/tsne-a.PNG" width=400 class = "center">
 
 Most activities can be separated very well
-   <img src = "https://github.com/XunyiiZ/SC1015-Project/blob/e5ceef024ba0ff15910e8f8e30c4723628a580ea/images/tsne-p.PNG" width=400>
+   <img src = "https://github.com/XunyiiZ/SC1015-Project/blob/e5ceef024ba0ff15910e8f8e30c4723628a580ea/images/tsne-p.PNG" width=400 class = "center">
 
 From right corner, we can see that participants are also separable in dynamic moving.
 
 ### 1.5 feature exploration
 1. The features seem to have a main name and some information on how they have been computed attached. Grouping the main names will reduce the dimensions for the first impression.
-<img src = "https://github.com/XunyiiZ/SC1015-Project/blob/e5ceef024ba0ff15910e8f8e30c4723628a580ea/images/main%20feature%20group.PNG" width =400>
+<img src = "https://github.com/XunyiiZ/SC1015-Project/blob/e5ceef024ba0ff15910e8f8e30c4723628a580ea/images/main%20feature%20group.PNG" width =400 class = "center">
 2. Use all "mag-mean" data to see how they separate data differently
-<img src = "https://github.com/XunyiiZ/SC1015-Project/blob/e5ceef024ba0ff15910e8f8e30c4723628a580ea/images/boxplot1.PNG" width =400>
-<img src = "https://github.com/XunyiiZ/SC1015-Project/blob/e5ceef024ba0ff15910e8f8e30c4723628a580ea/images/boxplot2.PNG" width = 400>
+<img src = "https://github.com/XunyiiZ/SC1015-Project/blob/e5ceef024ba0ff15910e8f8e30c4723628a580ea/images/boxplot1.PNG" width =400 class = "center">
+<img src = "https://github.com/XunyiiZ/SC1015-Project/blob/e5ceef024ba0ff15910e8f8e30c4723628a580ea/images/boxplot2.PNG" width = 400 class = "center">
 
 From these figures, we can see that the magnitude of the accelerometer can separate movement from stationary activities pretty well, but the frequency data does not help much.
 
@@ -73,11 +72,11 @@ We also trained light-gbm for classifying participants, the accuracy of model is
 we decided to take one step further, to see what more information we can reveal from the data. 
 In this part, we used the [Singular-Spectrum Analysis notebook](https://www.kaggle.com/jdarcy/introducing-ssa-for-time-series-decomposition) (SSA) from [jdarcy](https://www.kaggle.com/jdarcy) created by [jdarcy](https://www.kaggle.com/jdarcy) 
 SSA enables us to extract the main components of the waking style of participants using the euclidean norm of the accelerometer axes: x, y, and z.  In this way, we can convert our sensor data to a time-series plot.
-![](https://github.com/XunyiiZ/SC1015-Project/blob/6224ba8f602d3e3a9e8cb3cf64d17ae136a1bbf4/images/walking%20time%20series.PNG)
+<img src="https://github.com/XunyiiZ/SC1015-Project/blob/4b6f85870471f86b1de37a7ec99495d66d2799d5/images/walking%20time%20series.PNG" width =400 class = "center">
 Then, if we fit a sin curve to the time-series graph, we shall be able to find out the step frequency of a person
-![](https://github.com/XunyiiZ/SC1015-Project/blob/6224ba8f602d3e3a9e8cb3cf64d17ae136a1bbf4/images/walking%20fit%201.PNG)
+<img src= "https://github.com/XunyiiZ/SC1015-Project/blob/4b6f85870471f86b1de37a7ec99495d66d2799d5/images/walking%20fit%201.PNG" width = 400 class = "center">
 After the initial fitting, we found that there seems to be a pace change during the experiment, this is possibly due to two different trial experiments. So we managed to separate the timeseries and re-fit the sin-curve. Here’s what we got:
-![](https://github.com/XunyiiZ/SC1015-Project/blob/6224ba8f602d3e3a9e8cb3cf64d17ae136a1bbf4/images/walking%20fit%202.PNG)
+<img src= "https://github.com/XunyiiZ/SC1015-Project/blob/4b6f85870471f86b1de37a7ec99495d66d2799d5/images/walking%20fit%202.PNG" width = 400 class = "center">
 So we successfully showed one can actually exploit a lot from these two sensor datas. Not only the activities the users are doing, but also the identity of the user. Moreover, one can even calculate and find out the tranduser’s walking pattern, like pace or step frequency.
 
 
