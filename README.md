@@ -62,7 +62,8 @@ From these figures, we can see that the magnitude of the accelerometer can separ
 - [random forest](https://github.com/XunyiiZ/SC1015-Project/blob/6224ba8f602d3e3a9e8cb3cf64d17ae136a1bbf4/Part%202(b).%20RandomForest(Classifying%20Activities).ipynb)
 - [light-gbm](https://github.com/XunyiiZ/SC1015-Project/blob/6224ba8f602d3e3a9e8cb3cf64d17ae136a1bbf4/Part%202(c).%20LightGBM(classifying%20activities).ipynb)
 
-We train these 3 models and also use randomizedSearchCV for hyperparameter tuning. The accuracy for each model is all abve 0.9
+We train these 3 models and also use randomizedSearchCV for hyperparameter tuning. The accuracy for each model is all above 0.9
+
 <img src = "https://github.com/XunyiiZ/SC1015-Project/blob/38589cef51fc8343534f54cad81af8d7699a5bf6/images/initial%20accuracy.PNG" width =600 >
 
 ### 2.2 classifying participants
@@ -142,4 +143,4 @@ To ultimately prevent the privacy leak related to human activity data, based on 
 
 ## 5. References
 1. https://www.kaggle.com/code/ashishpatel26/feature-importance-of-lightgbm/notebook#Feature-importance
-2. 
+2. https://www.kaggle.com/code/jdarcy/introducing-ssa-for-time-series-decomposition/notebook
