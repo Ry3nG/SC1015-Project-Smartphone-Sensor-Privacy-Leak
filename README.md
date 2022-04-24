@@ -85,7 +85,7 @@ So we successfully showed one can actually exploit a lot from these two sensor d
 ### 3.1 Drop main feature group one by one
 
 Our intuitive solution is to drop the main features that we have grouped earlier in EDA part one by one. As we can see, the performance in 3 models is still above 0.9, which is not what we expected.
-![]()
+<img src = "images/initial accuracy.PNG" width =4 00  >
 
 ### 3.2 Drop 10%, 30%, 50% of important features
 
@@ -107,3 +107,6 @@ Also, most of us carry our smartphones around every day and every minute, it is 
 
 To ultimately prevent the privacy leak related to human activity data, based on our findings in this project. We suggest forbidding access to these sensors from unnecessary apps. After all, all the insights we explored are extracted from only 2 sensors, let’s not forget how many other permission you gave when you rush to press every ALLOW button when you download an app
 
+## 5. References
+1. https://www.kaggle.com/code/ashishpatel26/feature-importance-of-lightgbm/notebook#Feature-importance
+2. 
