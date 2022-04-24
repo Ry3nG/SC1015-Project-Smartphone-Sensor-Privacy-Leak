@@ -7,17 +7,16 @@ subproblem 1: What user information can we exploit from the dataset?
 
 subproblem 2: How to prevent personal information leak by preventing partial data?
 
-## 1. [Exploratory Data Analysis]()
+## 1. [Exploratory Data Analysis](https://github.com/XunyiiZ/SC1015-Project/blob/6224ba8f602d3e3a9e8cb3cf64d17ae136a1bbf4/Part%201.%20EDA.ipynb)
 #### a. About dataset:
 > 30 study participants performing activities of daily living (ADL) while > > carrying a waist-mounted smartphone with embedded inertial sensors > (accelerometer and gyroscope). The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window).
 
 #### b. Data Cleaning
 1. There are 0 NaN or Null value in the dataset
 2. The data is quite balanced in both activities and participants
-   <img src="C:/Users/曾迅奕/Desktop/Zeng Xunyi/NTU UNDERGRAD/CS y2s2/CZ1115 intro to dsai/DSPROJECT/images/activity balance.png" width="400"/>
-![](C:/Users/曾迅奕/Desktop/Zeng Xunyi/NTU UNDERGRAD/CS y2s2/CZ1115 intro to dsai/DSPROJECT/images/activity balance.png)
-![](C:/Users/曾迅奕/Desktop/Zeng Xunyi/NTU UNDERGRAD/CS y2s2/CZ1115 intro to dsai/DSPROJECT/images/participant balance.png)
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+
+![](https://github.com/XunyiiZ/SC1015-Project/blob/6224ba8f602d3e3a9e8cb3cf64d17ae136a1bbf4/images/activities%20number.PNG | width=400)
+![](https://github.com/XunyiiZ/SC1015-Project/blob/6224ba8f602d3e3a9e8cb3cf64d17ae136a1bbf4/images/participant%20balance.png)
 
 #### c. explore the dataset
 1. description
@@ -28,67 +27,73 @@ subproblem 2: How to prevent personal information leak by preventing partial dat
 
 2. activities in dataset
 
-![](C:\Users\曾迅奕\Desktop\Zeng Xunyi\NTU UNDERGRAD\CS y2s2\CZ1115 intro to dsai\DSPROJECT\images\activities number.PNG)
-![](C:/Users/曾迅奕/AppData/Local/Temp/download.png)
+![](images/activities number.PNG)
+
+![](images/activity.png)
 
 3. participants in dataset
-   Number of Participants: 30
-   ![](C:/Users/曾迅奕/Desktop/Zeng Xunyi/NTU UNDERGRAD/CS y2s2/CZ1115 intro to dsai/DSPROJECT/images/participants.png)
+Number of Participants: 30
+
+![](images/participants.png)
 
 #### d. TSNE(t-distributed stochastic neighbor) for visualization data visualization
-![]()
+![](images/tsne-a.PNG)
+
+<img src= "https://github.com/XunyiiZ/SC1015-Project/blob/6224ba8f602d3e3a9e8cb3cf64d17ae136a1bbf4/images/tsne-a.PNG" width="400"/>
+
 Most activities can be separated very well
-![]()
+
+![](images/tsne-p.PNG)
 From right corner, we can see that participants are also separable in dynamic moving.
 #### e. feature exploration
 1. The features seem to have a main name and some information on how they have been computed attached. Grouping the main names will reduce the dimensions for the first impression.
-![]()
+![](images/main feature group.PNG)
 
 2. Use all "mag-mean" data to see how they separate data differently
-![]()
-   From these figures, we can see that the magnitude of the accelerometer can separate movement from stationary activities pretty well, but the frequency data does not help much.
+![](images/boxplot1.PNG) ![](images/boxplot2.PNG)
+From these figures, we can see that the magnitude of the accelerometer can separate movement from stationary activities pretty well, but the frequency data does not help much.
 
 ## 2. What can we explore from smartphone sensor data?
 ### 2.1 Classifying activities
 
-- logistic regression
-- random forest
-- light-gbm
+- [logistic regression](https://github.com/XunyiiZ/SC1015-Project/blob/6224ba8f602d3e3a9e8cb3cf64d17ae136a1bbf4/Part%202(a).%20Logistic%20Regression%20(classifying%20activities).ipynb)
+- [random forest](https://github.com/XunyiiZ/SC1015-Project/blob/6224ba8f602d3e3a9e8cb3cf64d17ae136a1bbf4/Part%202(b).%20RandomForest(Classifying%20Activities).ipynb)
+- [light-gbm](https://github.com/XunyiiZ/SC1015-Project/blob/6224ba8f602d3e3a9e8cb3cf64d17ae136a1bbf4/Part%202(c).%20LightGBM(classifying%20activities).ipynb)
 
 We train these 3 models and also use randomizedSearchCV for hyperparameter tuning. The accuracy for each model is all abve 0.9
 
 ### 2.2 classifying participants
 
-- light-gbm
-We also trained light-gbm for classifying participants
+- [light-gbm](https://github.com/XunyiiZ/SC1015-Project/blob/6224ba8f602d3e3a9e8cb3cf64d17ae136a1bbf4/Part%202(d)%20Light-GBM(clasifying%20participants).ipynb)
+We also trained light-gbm for classifying participants, the accuracy of model is
 
 ### 2.3 personal information exploration
 
 we decided to take one step further, to see what more information we can reveal from the data. 
 In this part, we used the [Singular-Spectrum Analysis notebook](https://www.kaggle.com/jdarcy/introducing-ssa-for-time-series-decomposition) (SSA) from [jdarcy](https://www.kaggle.com/jdarcy) created by [jdarcy](https://www.kaggle.com/jdarcy) 
 SSA enables us to extract the main components of the waking style of participants using the euclidean norm of the accelerometer axes: x, y, and z.  In this way, we can convert our sensor data to a time-series plot.
-![]()
+![](https://github.com/XunyiiZ/SC1015-Project/blob/6224ba8f602d3e3a9e8cb3cf64d17ae136a1bbf4/images/walking%20time%20series.PNG)
 Then, if we fit a sin curve to the time-series graph, we shall be able to find out the step frequency of a person
-![]()
+![](https://github.com/XunyiiZ/SC1015-Project/blob/6224ba8f602d3e3a9e8cb3cf64d17ae136a1bbf4/images/walking%20fit%201.PNG)
 After the initial fitting, we found that there seems to be a pace change during the experiment, this is possibly due to two different trial experiments. So we managed to separate the timeseries and re-fit the sin-curve. Here’s what we got:
-![]()
+![](https://github.com/XunyiiZ/SC1015-Project/blob/6224ba8f602d3e3a9e8cb3cf64d17ae136a1bbf4/images/walking%20fit%202.PNG)
 So we successfully showed one can actually exploit a lot from these two sensor datas. Not only the activities the users are doing, but also the identity of the user. Moreover, one can even calculate and find out the tranduser’s walking pattern, like pace or step frequency.
 
 
 ## 3. Can we prevent personal information leak by preventing partial data?
 
-3.1 Drop main feature group one by one
+### 3.1 Drop main feature group one by one
 
 Our intuitive solution is to drop the main features that we have grouped earlier in EDA part one by one. As we can see, the performance in 3 models is still above 0.9, which is not what we expected.
 ![]()
 
-3.2 Drop 10%, 30%, 50% of important features
+### 3.2 Drop 10%, 30%, 50% of important features
 
 In the EDA part, we also have seen that different features are able to separate activities to various degrees with some clearly differentiating the activities and others not so much.
 This gives us the idea to find the sorted list of important features in each model, we successively drop  top 10 percent, top 30 percent and top 50 percent of the important features, however, the accuracy for each model still remained very high.
 ![]()
 
-3.3 Drop one of sensor information
+### 3.3 Drop one of sensor information
 Then we try to hide all information of 1 sensor to see if the model will be affected.
 , thus we drop all the features that are recorded by accelerometer  first, then we drop the features recorded by gyroscope, Surprisingly, the performance for each model are still quite good, with accuracy above 0.8
 ![]()
