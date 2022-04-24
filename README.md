@@ -15,6 +15,8 @@ subproblem 2: How to prevent personal information leak by preventing partial dat
 1. There are 0 NaN or Null value in the dataset
 2. The data is quite balanced in both activities and participants
 
+<img src = "https://github.com/XunyiiZ/SC1015-Project/blob/6224ba8f602d3e3a9e8cb3cf64d17ae136a1bbf4/images/activities%20number.PNG" width=400>
+
 ![](https://github.com/XunyiiZ/SC1015-Project/blob/6224ba8f602d3e3a9e8cb3cf64d17ae136a1bbf4/images/activities%20number.PNG | width=400)
 ![](https://github.com/XunyiiZ/SC1015-Project/blob/6224ba8f602d3e3a9e8cb3cf64d17ae136a1bbf4/images/participant%20balance.png)
 
