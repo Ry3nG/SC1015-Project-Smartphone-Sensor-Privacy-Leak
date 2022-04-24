@@ -145,3 +145,10 @@ To ultimately prevent the privacy leak related to human activity data, based on 
 1. https://www.kaggle.com/code/ashishpatel26/feature-importance-of-lightgbm/notebook#Feature-importance
 2. https://www.kaggle.com/code/jdarcy/introducing-ssa-for-time-series-decomposition/notebook
 3. https://stackoverflow.com/questions/16716302/how-do-i-fit-a-sine-curve-to-my-data-with-pylab-and-numpy
+4. https://machinelearningmastery.com/hyperparameter-optimization-with-random-search-and-grid-search/
+
+---
+Contribution:
+- Chen Yi:  EDA, logistic regression model, conclusion, film video
+- Gong Zerui: EDA, Random Forest model, LGBM (participants), perosonal information exploration (Part 2(d)), conclusion, film video, edit video
+- Zeng Xunyi: EDA, LGBM (activities), LGBM (participants), film video, code review, readme report
