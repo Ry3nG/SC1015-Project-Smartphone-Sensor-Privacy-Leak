@@ -94,9 +94,6 @@ So we successfully showed one can actually exploit a lot from these two sensor d
 Our intuitive solution is to drop the main features that we have grouped earlier in EDA part one by one. As we can see, the performance in 3 models is still above 0.9, which is not what we expected.
 
 <img src = "https://github.com/XunyiiZ/SC1015-Project/blob/38589cef51fc8343534f54cad81af8d7699a5bf6/images/drop%20main%20features.PNG" width =600 >
-<img src = "https://github.com/XunyiiZ/SC1015-Project/blob/38589cef51fc8343534f54cad81af8d7699a5bf6/images/1lgrg.PNG" width =600 >
-<img src = "https://github.com/XunyiiZ/SC1015-Project/blob/38589cef51fc8343534f54cad81af8d7699a5bf6/images/1randomfrst.PNG" width =600 >
-<img src = "https://github.com/XunyiiZ/SC1015-Project/blob/38589cef51fc8343534f54cad81af8d7699a5bf6/images/1lgbm.PNG" width =600 >
 
 |                                                        Logistic Regression                                                         |                                                              Random Forest                                                               |                                                             Light-GBM                                                              |
 |:----------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|
@@ -107,18 +104,20 @@ Our intuitive solution is to drop the main features that we have grouped earlier
 In the EDA part, we also have seen that different features are able to separate activities to various degrees with some clearly differentiating the activities and others not so much.
 This gives us the idea to find the sorted list of important features in each model, we successively drop  top 10 percent, top 30 percent and top 50 percent of the important features, however, the accuracy for each model still remained very high.
 
-<img src = "https://github.com/XunyiiZ/SC1015-Project/blob/38589cef51fc8343534f54cad81af8d7699a5bf6/images/drop%20main%20features.PNG" width =600 >
-<img src = "https://github.com/XunyiiZ/SC1015-Project/blob/38589cef51fc8343534f54cad81af8d7699a5bf6/images/drop%20main%20features.PNG" width =600 >
-<img src = "https://github.com/XunyiiZ/SC1015-Project/blob/38589cef51fc8343534f54cad81af8d7699a5bf6/images/drop%20main%20features.PNG" width =600 >
-<img src = "https://github.com/XunyiiZ/SC1015-Project/blob/38589cef51fc8343534f54cad81af8d7699a5bf6/images/drop%20main%20features.PNG" width =600 >
+<img src = "https://github.com/XunyiiZ/SC1015-Project/blob/12482d95c8aa9fcb3b8ac4648214efd79d489d03/images/drop%20important%20features.PNG" width =600 >
+
+|                                                        Logistic Regression                                                         |                                                              Random Forest                                                               |                                                             Light-GBM                                                              |
+|:----------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|
+| <img src = "https://github.com/XunyiiZ/SC1015-Project/blob/12482d95c8aa9fcb3b8ac4648214efd79d489d03/images/2lgrg.PNG" width =600 > | <img src = "https://github.com/XunyiiZ/SC1015-Project/blob/12482d95c8aa9fcb3b8ac4648214efd79d489d03/images/2randomfrst.PNG" width =600 > | <img src = "https://github.com/XunyiiZ/SC1015-Project/blob/12482d95c8aa9fcb3b8ac4648214efd79d489d03/images/2lgbm.PNG" width =600 > |
 
 ### 3.3 Drop one of sensor information
 Then we try to hide all information of 1 sensor to see if the model will be affected.
 , thus we drop all the features that are recorded by accelerometer  first, then we drop the features recorded by gyroscope, Surprisingly, the performance for each model are still quite good, with accuracy above 0.8
-<img src = "https://github.com/XunyiiZ/SC1015-Project/blob/38589cef51fc8343534f54cad81af8d7699a5bf6/images/drop%20main%20features.PNG" width =600 >
-<img src = "https://github.com/XunyiiZ/SC1015-Project/blob/38589cef51fc8343534f54cad81af8d7699a5bf6/images/drop%20main%20features.PNG" width =600 >
-<img src = "https://github.com/XunyiiZ/SC1015-Project/blob/38589cef51fc8343534f54cad81af8d7699a5bf6/images/drop%20main%20features.PNG" width =600 >
-<img src = "https://github.com/XunyiiZ/SC1015-Project/blob/38589cef51fc8343534f54cad81af8d7699a5bf6/images/drop%20main%20features.PNG" width =600 >
+<img src = "https://github.com/XunyiiZ/SC1015-Project/blob/12482d95c8aa9fcb3b8ac4648214efd79d489d03/images/sensor.PNG" width =600 >
+
+|                                                        Logistic Regression                                                         |                                                              Random Forest                                                               |                                                             Light-GBM                                                              |
+|:----------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|
+| <img src = "https://github.com/XunyiiZ/SC1015-Project/blob/12482d95c8aa9fcb3b8ac4648214efd79d489d03/images/3lgrg.PNG" width =600 > | <img src = "https://github.com/XunyiiZ/SC1015-Project/blob/12482d95c8aa9fcb3b8ac4648214efd79d489d03/images/3randomfrst.PNG" width =600 > | <img src = "https://github.com/XunyiiZ/SC1015-Project/blob/12482d95c8aa9fcb3b8ac4648214efd79d489d03/images/3lgbm.PNG" width =600 > |
 
 Base on our findings, it seems that even if we completely remove one of the sensor, the data collected from the other sensor can still be used to recognise user’s activities to a relatively high accuracy.·. Hence, it is impossible to prevent this kind of data from leaking by partially hiding some of the sensor parameters.
 
