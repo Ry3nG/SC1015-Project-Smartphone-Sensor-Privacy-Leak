@@ -92,13 +92,15 @@ So we successfully showed one can actually exploit a lot from these two sensor d
 ### 3.1 Drop main feature group one by one
 
 Our intuitive solution is to drop the main features that we have grouped earlier in EDA part one by one. As we can see, the performance in 3 models is still above 0.9, which is not what we expected.
+
 <img src = "https://github.com/XunyiiZ/SC1015-Project/blob/38589cef51fc8343534f54cad81af8d7699a5bf6/images/drop%20main%20features.PNG" width =600 >
 <img src = "https://github.com/XunyiiZ/SC1015-Project/blob/38589cef51fc8343534f54cad81af8d7699a5bf6/images/1lgrg.PNG" width =600 >
 <img src = "https://github.com/XunyiiZ/SC1015-Project/blob/38589cef51fc8343534f54cad81af8d7699a5bf6/images/1randomfrst.PNG" width =600 >
 <img src = "https://github.com/XunyiiZ/SC1015-Project/blob/38589cef51fc8343534f54cad81af8d7699a5bf6/images/1lgbm.PNG" width =600 >
-Logistic Regression        |  Random Forest           | Light-GBM               |
-:-------------------------:|:------------------------:|:------------------------:
-<img src = "https://github.com/XunyiiZ/SC1015-Project/blob/38589cef51fc8343534f54cad81af8d7699a5bf6/images/1lgrg.PNG" width =600 > |  <img src = "https://github.com/XunyiiZ/SC1015-Project/blob/38589cef51fc8343534f54cad81af8d7699a5bf6/images/1randomfrst.PNG" width =600 > | <img src = "https://github.com/XunyiiZ/SC1015-Project/blob/38589cef51fc8343534f54cad81af8d7699a5bf6/images/1lgbm.PNG" width =600 >
+
+|                                                        Logistic Regression                                                         |                                                              Random Forest                                                               |                                                             Light-GBM                                                              |
+|:----------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------:|
+| <img src = "https://github.com/XunyiiZ/SC1015-Project/blob/38589cef51fc8343534f54cad81af8d7699a5bf6/images/1lgrg.PNG" width =600 > | <img src = "https://github.com/XunyiiZ/SC1015-Project/blob/38589cef51fc8343534f54cad81af8d7699a5bf6/images/1randomfrst.PNG" width =600 > | <img src = "https://github.com/XunyiiZ/SC1015-Project/blob/38589cef51fc8343534f54cad81af8d7699a5bf6/images/1lgbm.PNG" width =600 > |
 
 ### 3.2 Drop 10%, 30%, 50% of important features
 
