@@ -1,6 +1,7 @@
 # SC1015 Data Science & Artificial Intelligence Mini Project
 # How much user information can smartphone sensors reveal? Can we prevent it by protecting partial data?
 SC16 --- Chen Yi, Gong Zerui, Zeng Xunyi
+
 dataset: https://www.kaggle.com/datasets/uciml/human-activity-recognition-with-smartphones
 
 subproblem 1: What user information can we exploit from the dataset?
@@ -8,51 +9,49 @@ subproblem 1: What user information can we exploit from the dataset?
 subproblem 2: How to prevent personal information leak by preventing partial data?
 
 ## 1. [Exploratory Data Analysis](https://github.com/XunyiiZ/SC1015-Project/blob/6224ba8f602d3e3a9e8cb3cf64d17ae136a1bbf4/Part%201.%20EDA.ipynb)
-#### a. About dataset:
+### 1.1 About dataset:
 > 30 study participants performing activities of daily living (ADL) while > > carrying a waist-mounted smartphone with embedded inertial sensors > (accelerometer and gyroscope). The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window).
 
-#### b. Data Cleaning
+### 1.2 Data Cleaning
 1. There are 0 NaN or Null value in the dataset
 2. The data is quite balanced in both activities and participants
 
-<img src = "https://github.com/XunyiiZ/SC1015-Project/blob/6224ba8f602d3e3a9e8cb3cf64d17ae136a1bbf4/images/activities%20number.PNG" width=400>
+   <img src = "https://github.com/XunyiiZ/SC1015-Project/blob/e5ceef024ba0ff15910e8f8e30c4723628a580ea/images/activity%20balance.png" width=400>
 
-![](https://github.com/XunyiiZ/SC1015-Project/blob/6224ba8f602d3e3a9e8cb3cf64d17ae136a1bbf4/images/activities%20number.PNG | width=400)
-![](https://github.com/XunyiiZ/SC1015-Project/blob/6224ba8f602d3e3a9e8cb3cf64d17ae136a1bbf4/images/participant%20balance.png)
+   ![](https://github.com/XunyiiZ/SC1015-Project/blob/6224ba8f602d3e3a9e8cb3cf64d17ae136a1bbf4/images/participant%20balance.png)
 
-#### c. explore the dataset
-1. description
+### 1.3 explore the dataset
+a. description
 > prefix 't' in those metrics denotes time.
 > suffix 'XYZ' represents 3-axial signals in X , Y, and Z directions.
 > 'f' denotes frequency
 > In physics, jerk is the rate at which an object's acceleration changes with respect to time. It is a vector quantity (having both magnitude and direction). Jerk is most commonly denoted by the symbol j and expressed in m/s^3 (SI units) or standard gravities per second (g_0/s).
 
-2. activities in dataset
+ b. activities in dataset
 
-![](images/activities number.PNG)
+   <img src = "https://github.com/XunyiiZ/SC1015-Project/blob/e5ceef024ba0ff15910e8f8e30c4723628a580ea/images/activities%20number.PNG" width=400>
+   <img src = "https://github.com/XunyiiZ/SC1015-Project/blob/e5ceef024ba0ff15910e8f8e30c4723628a580ea/images/activity.png" width=400>
 
-![](images/activity.png)
-
-3. participants in dataset
+#### c. participants in dataset
 Number of Participants: 30
+   <img src = "https://github.com/XunyiiZ/SC1015-Project/blob/e5ceef024ba0ff15910e8f8e30c4723628a580ea/images/participants.png" width=400>
 
-![](images/participants.png)
+### 1.4 TSNE(t-distributed stochastic neighbor) for visualization data visualization
 
-#### d. TSNE(t-distributed stochastic neighbor) for visualization data visualization
-![](images/tsne-a.PNG)
-
-<img src= "https://github.com/XunyiiZ/SC1015-Project/blob/6224ba8f602d3e3a9e8cb3cf64d17ae136a1bbf4/images/tsne-a.PNG" width="400"/>
+   <img src = "https://github.com/XunyiiZ/SC1015-Project/blob/e5ceef024ba0ff15910e8f8e30c4723628a580ea/images/tsne-a.PNG" width=400>
 
 Most activities can be separated very well
+   <img src = "https://github.com/XunyiiZ/SC1015-Project/blob/e5ceef024ba0ff15910e8f8e30c4723628a580ea/images/tsne-p.PNG" width=400>
 
-![](images/tsne-p.PNG)
 From right corner, we can see that participants are also separable in dynamic moving.
-#### e. feature exploration
-1. The features seem to have a main name and some information on how they have been computed attached. Grouping the main names will reduce the dimensions for the first impression.
-![](images/main feature group.PNG)
 
+### 1.5 feature exploration
+1. The features seem to have a main name and some information on how they have been computed attached. Grouping the main names will reduce the dimensions for the first impression.
+<img src = "https://github.com/XunyiiZ/SC1015-Project/blob/e5ceef024ba0ff15910e8f8e30c4723628a580ea/images/main%20feature%20group.PNG" width =400>
 2. Use all "mag-mean" data to see how they separate data differently
-![](images/boxplot1.PNG) ![](images/boxplot2.PNG)
+<img src = "https://github.com/XunyiiZ/SC1015-Project/blob/e5ceef024ba0ff15910e8f8e30c4723628a580ea/images/boxplot1.PNG" width =400>
+<img src = "https://github.com/XunyiiZ/SC1015-Project/blob/e5ceef024ba0ff15910e8f8e30c4723628a580ea/images/boxplot2.PNG" width = 400>
+
 From these figures, we can see that the magnitude of the accelerometer can separate movement from stationary activities pretty well, but the frequency data does not help much.
 
 ## 2. What can we explore from smartphone sensor data?
