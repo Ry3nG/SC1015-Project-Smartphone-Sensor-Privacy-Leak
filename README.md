@@ -36,7 +36,7 @@ Number of Participants: 30
 
 <img src = "https://github.com/XunyiiZ/SC1015-Project/blob/e5ceef024ba0ff15910e8f8e30c4723628a580ea/images/participants.png" width=600 class = "center">
 
-### 1.4 TSNE(t-distributed stochastic neighbor) for visualization data visualization
+### 1.4 TSNE(t-distributed stochastic neighbor) for data visualization
 
 <img src = "https://github.com/XunyiiZ/SC1015-Project/blob/e5ceef024ba0ff15910e8f8e30c4723628a580ea/images/tsne-a.PNG" width=600 class = "center">
 
@@ -44,7 +44,7 @@ Most activities can be separated very well
 
 <img src = "https://github.com/XunyiiZ/SC1015-Project/blob/e5ceef024ba0ff15910e8f8e30c4723628a580ea/images/tsne-p.PNG" width=600 class = "center">
 
-From right corner, we can see that participants are also separable in dynamic moving.
+From right corner, we can see that participants are also separable in dynamic activities.
 
 ### 1.5 feature exploration
 1. The features seem to have a main name and some information on how they have been computed attached. Grouping the main names will reduce the dimensions for the first impression.
@@ -115,7 +115,7 @@ Our intuitive solution is to drop the main features that we have grouped earlier
 ### 3.2 Drop 10%, 30%, 50% of important features
 
 In the EDA part, we also have seen that different features are able to separate activities to various degrees with some clearly differentiating the activities and others not so much.
-This gives us the idea to find the sorted list of important features in each model, we successively drop  top 10 percent, top 30 percent and top 50 percent of the important features, however, the accuracy for each model still remained very high.
+This gives us the idea to find the sorted list of important features in each model, we successively drop  top 10 percent, top 30 percent and top 50 percent of the important features, however, the best performance in 3 models are still high.
 
 <img src = "https://github.com/XunyiiZ/SC1015-Project/blob/12482d95c8aa9fcb3b8ac4648214efd79d489d03/images/drop%20important%20features.PNG" width =600 >
 
@@ -125,7 +125,7 @@ This gives us the idea to find the sorted list of important features in each mod
 
 ### 3.3 Drop one of sensor information
 Then we try to hide all information of 1 sensor to see if the model will be affected.
-, thus we drop all the features that are recorded by accelerometer  first, then we drop the features recorded by gyroscope, Surprisingly, the performance for each model are still quite good, with accuracy above 0.8
+, thus we drop all the features that are recorded by accelerometer  first, then we drop the features recorded by gyroscope, Surprisingly, the performance for each model are still quite good, with accuracy above 0.8.
 <img src = "https://github.com/XunyiiZ/SC1015-Project/blob/12482d95c8aa9fcb3b8ac4648214efd79d489d03/images/sensor.PNG" width =600 >
 
 |                                                        Logistic Regression                                                         |                                                              Random Forest                                                               |                                                             Light-GBM                                                              |
