@@ -69,7 +69,18 @@ We train these 3 models and also use randomizedSearchCV for hyperparameter tunin
 
 - [light-gbm](https://github.com/XunyiiZ/SC1015-Project/blob/6224ba8f602d3e3a9e8cb3cf64d17ae136a1bbf4/Part%202(d)%20Light-GBM(clasifying%20participants).ipynb)
 
-We also trained light-gbm for classifying participants, the accuracy of model is ?????
+We also trained light-gbm for classifying participants, here is the accuracy for classifying participant in different activitis:
+
+|      Activity      |  Accuracy  |
+|:------------------:|:----------:|
+|       LAYING       | 0.64403292 |
+|      STANDING      | 0.54088050 |
+|      SITTING       | 0.53258427 |
+|      WALKING       | 0.96055684 |
+|  WALKING_UPSTAIRS  | 0.92487047 |
+| WALKING_DOWNSTAIRS | 0.91477273 |
+
+We can see that it's very accurate to detect the specific person based on their activity. And the accuracy is much higher for movement. (96.1% for walking) This suggests we can find a unique movement pattern for each individual.
 
 ### 2.3 personal information exploration
 
@@ -82,6 +93,7 @@ Then, if we fit a sin curve to the time-series graph, we shall be able to find o
 <img src= "https://github.com/XunyiiZ/SC1015-Project/blob/4b6f85870471f86b1de37a7ec99495d66d2799d5/images/walking%20fit%201.PNG" width = 600 class = "center">
 
 After the initial fitting, we found that there seems to be a pace change during the experiment, this is possibly due to two different trial experiments. So we managed to separate the timeseries and re-fit the sin-curve. Here’s what we got:
+
 <img src= "https://github.com/XunyiiZ/SC1015-Project/blob/4b6f85870471f86b1de37a7ec99495d66d2799d5/images/walking%20fit%202.PNG" width = 600 class = "center">
 
 So we successfully showed one can actually exploit a lot from these two sensor datas. Not only the activities the users are doing, but also the identity of the user. Moreover, one can even calculate and find out the tranduser’s walking pattern, like pace or step frequency.
